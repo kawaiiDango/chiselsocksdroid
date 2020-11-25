@@ -387,7 +387,7 @@ public class SocksVpnService extends VpnService {
             chiselCommands.add(chiselServer);
             chiselCommands.add(port + ":socks");
             if (!chiselAdditionalRemotes.equals(""))
-                for (String remote : chiselHeaders.split(" "))
+                for (String remote : chiselAdditionalRemotes.split(" "))
                     chiselCommands.add(remote);
             try {
                 String[] arr = new String[chiselCommands.size()];
